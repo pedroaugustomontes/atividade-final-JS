@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="ex3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Galeria de Imagens</h1>
+      <div id="galeria">
+        <img
+          src="https://images.unsplash.com/photo-1573770200393-d28efec99581?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Imagem 1"
+          class="miniatura"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1568430328012-21ed450453ea?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Imagem 2"
+          class="miniatura"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1570913179118-f3d24be1d1f7?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Imagem 3"
+          class="miniatura"
+        />
+        <!-- Adicione mais miniaturas conforme necessário -->
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <span id="fechar" class="fechar">&times;</span>
+      <img class="modal-conteudo" id="imagemGrande" />
+      <div id="setaEsquerda" class="seta">&lt;</div>
+      <div id="setaDireita" class="seta">&gt;</div>
+    </div>
+
+    <script src="ex3.js"></script>
+  </body>
+</html>

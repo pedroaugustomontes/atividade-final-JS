@@ -1,0 +1,113 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #eaeaea;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  width: 400px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+input,
+button {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  background-color: #6c757d;
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5a6268;
+}
+
+#listaTarefas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tarefa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.tarefa:hover {
+  background-color: #e9ecef;
+}
+
+.tarefaConcluida .descricao {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.descricao {
+  flex: 1;
+}
+
+.botao {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao.editar {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.botao.editar:hover {
+  background-color: #138496;
+}
+
+.botao.concluir {
+  background-color: #28a745;
+  color: white;
+}
+
+.botao.concluir:hover {
+  background-color: #218838;
+}
+
+.botao.remover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.botao.remover:hover {
+  background-color: #c82333;
+}

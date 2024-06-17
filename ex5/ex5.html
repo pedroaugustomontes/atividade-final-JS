@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="ex5.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Carrinho de Compras</h1>
+      <div id="produtos">
+        <h2>Produtos</h2>
+        <div class="produto" data-id="1">
+          <span class="nome-produto">Produto 1</span>
+          <span class="preco-produto">R$ 10.00</span>
+          <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto" data-id="2">
+          <span class="nome-produto">Produto 2</span>
+          <span class="preco-produto">R$ 20.00</span>
+          <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto" data-id="3">
+          <span class="nome-produto">Produto 3</span>
+          <span class="preco-produto">R$ 15.00</span>
+          <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+      </div>
+      <div id="carrinho">
+        <h2>Carrinho</h2>
+        <table id="tabelaCarrinho">
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Quantidade</th>
+              <th>Preço</th>
+              <th>Total</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Itens do carrinho serão inseridos aqui dinamicamente -->
+          </tbody>
+        </table>
+        <h3>Total da Compra: R$ <span id="totalCompra">0.00</span></h3>
+      </div>
+    </div>
+    <script src="ex5.js"></script>
+  </body>
+</html>

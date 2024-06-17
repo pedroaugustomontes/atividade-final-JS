@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela de Baleias</title>
+    <link rel="stylesheet" href="ex4.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Tabela de Baleias</h1>
+      <div id="filtros">
+        <input
+          type="text"
+          id="filtroEspecie"
+          placeholder="Filtrar por espécie"
+        />
+        <input
+          type="text"
+          id="filtroTamanho"
+          placeholder="Filtrar por tamanho (em metros)"
+        />
+        <input
+          type="text"
+          id="filtroPeso"
+          placeholder="Filtrar por peso (em kg)"
+        />
+        <input
+          type="text"
+          id="filtroHabitat"
+          placeholder="Filtrar por habitat"
+        />
+      </div>
+      <table id="tabelaDados">
+        <thead>
+          <tr>
+            <th data-coluna="especie">Espécie</th>
+            <th data-coluna="tamanho">Tamanho (m)</th>
+            <th data-coluna="peso">Peso (kg)</th>
+            <th data-coluna="habitat">Habitat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dados da tabela serão inseridos aqui dinamicamente -->
+        </tbody>
+      </table>
+    </div>
+    <script src="ex4.js"></script>
+  </body>
+</html>
